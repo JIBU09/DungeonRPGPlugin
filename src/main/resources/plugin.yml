@@ -1,0 +1,85 @@
+name: DungeonRPGPlugin
+version: '${project.version}'
+main: de.jibu.dungeonrpgplugin.Main
+api-version: 1.20
+authors: [ JIBU ]
+description: Solo Levelling rip of
+
+commands:
+  spawndungeongateway:
+    usage: /spawndungeongateway
+    description: Spawns a dungeon Gateway at your location.
+    permission: dungeonrpg.gateway
+    permission-message: §cYou are not allowed to do this!
+    aliases:
+      - gateway
+      - spawngateway
+      - sg
+  generatedungeon:
+    usage: /generatedungeon <tier[s/a/b/c/d]>
+    description: Spawns a dungeon at your location.
+    permission: dungeonrpg.dungeon
+    permission-message: §cYou are not allowed to do this!
+    aliases:
+      - dungeon
+      - spawndungeon
+      - gd
+  generatedungeonroom:
+    usage: /generatedungeonroom <tier[s/a/b/c/d]> <true/false[remove after reload?]>
+    description: Spawns a dungeon at your location.
+    permission: dungeonrpg.dungeon
+    permission-message: §cYou are not allowed to do this!
+    aliases:
+      - spawnroom
+      - gdr
+  teleportdungeongateway:
+    usage: /teleportdungeongateway <portalID[p + portalNumber]>
+    description: Teleport to any dungeongateway
+    permission: dungeonrpg.gateway
+    permission-message: §cYou are not allowed to do this!
+    aliases:
+      - tpdg
+      - tpd
+      - teleportgateway
+      - tpg
+      - tg
+  spawnmob:
+    usage: /spawnmob <Player> <Mob> <Amount>
+    description: Spawn any mob
+    permission: dungeonrpg.other
+    permission-message: §cYou are not allowed to do this!
+  game:
+    usage: /game
+    description: Try it out yourself ;) (Arena recommended)
+    permission: dungeonrpg.other
+    permission-message: §cYou are not allowed to do this!
+  items:
+    usage: /items (item)
+    description: Allows you to see/get all custom items!
+    permission: dungeonrpg.items
+    permission-message: §cYou are not allowed to do this!
+    aliases:
+      - i
+  additem:
+    usage: /additem
+    description: Allows you to add the item in your main-hand to all the other ones!
+    permission: dungeonrpg.items
+    permission-message: §cYou are not allowed to do this!
+    aliases:
+      - ai
+      - addi
+  removeitem:
+    usage: /removeitem <item>
+    description: Allows you to remove a item(Doesn't work with already existing items)!
+    permission: dungeonrpg.items
+    permission-message: §cYou are not allowed to do this!
+    aliases:
+      - ri
+      - removei
+  debugitems:
+    usage: /debugitems
+    description: Gives you inventory items!
+    permission: dungeonrpg.items
+    permission-message: §cYou are not allowed to do this!
+    aliases:
+      - di
