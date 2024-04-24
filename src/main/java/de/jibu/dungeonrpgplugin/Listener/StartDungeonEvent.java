@@ -116,7 +116,6 @@ public class StartDungeonEvent implements Listener {
         if (player.getGameMode() == GameMode.SURVIVAL || player.getGameMode() == GameMode.ADVENTURE) {
             if (player.getInventory().isEmpty()) {
                 player.getInventory().addItem(TierDItems.defaultDagger());
-                player.getInventory().addItem(TierSItems.astylisDominate());
                 player.sendMessage("§7Since your inventory is empty you got the starting dagger!");
             }
         }
